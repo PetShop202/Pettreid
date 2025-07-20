@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetTreid | Grow a Garden Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e5f2ff, #cdeaff);
+      color: #333;
+    }
+    header {
+      background: #6ca7f2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .description {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+    .pets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .pet-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+    }
+    .pet-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .pet-name {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .price {
+      color: #28a745;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .buy-btn {
+      background: #5865F2;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .buy-btn:hover {
+      background: #404EED;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e0e0e0;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PetTreid</h1>
+    <div class="description">Магазин петів з гри Grow a Garden в Roblox</div>
+  </header>
+  <section class="pets">
+    <div class="pet-card">
+      <img src="https://i.imgur.com/w0xDQxk.png" alt="Bone Blossom">
+      <div class="pet-name">Bone Blossom</div>
+      <div class="price">250 Gems</div>
+      <button class="buy-btn" onclick="contactDiscord()">Купити</button>
+    </div>
+    <div class="pet-card">
+      <img src="https://i.imgur.com/34XwXLz.png" alt="Dino Pet">
+      <div class="pet-name">Dino Pet</div>
+      <div class="price">150 Gems</div>
+      <button class="buy-btn" onclick="contactDiscord()">Купити</button>
+    </div>
+    <div class="pet-card">
+      <img src="https://i.imgur.com/Jj34m1P.png" alt="Pumpkin Cow">
+      <div class="pet-name">Pumpkin Cow</div>
+      <div class="price">120 Gems</div>
+      <button class="buy-btn" onclick="contactDiscord()">Купити</button>
+    </div>
+    <div class="pet-card">
+      <img src="https://i.imgur.com/EFGpDAN.png" alt="Mystery Egg">
+      <div class="pet-name">Mystery Egg</div>
+      <div class="price">??? Gems</div>
+      <button class="buy-btn" onclick="contactDiscord()">Купити</button>
+    </div>
+  </section>
+  <footer>
+    Щоб купити пета — зв’яжіться з нами у Discord: <strong>@PetTredeShop</strong>
+  </footer>
+  <script>
+    function contactDiscord() {
+      window.location.href = "https://discord.com/users/PetTredeShop";
+    }
+  </script>
+</body>
+</html>
